@@ -1,12 +1,13 @@
 import logo from "./logo.svg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Agency from "./components/Agency";
-import Service from "./components/Service";
-import Discount from "./components/Discount";
-import Contact from "./components/contact";
+import Header from "./pages/Header";
+import Agency from "./pages/Agency";
+import Service from "./pages/Service";
+import Project from "./pages/Project";
+import Contact from "./pages/Contact";
+import Discount from "./pages/Discount";
+import Footer from "./pages/Footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Header />
       <Agency />
       <Service />
+      <Project />
       <Contact />
       <Discount />
       <Footer />
