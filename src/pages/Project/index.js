@@ -3,11 +3,10 @@ import {
   Container,
   ContentContainer,
   Desc,
-  FirstImg,
+  Img,
   ImgContainer,
   InnerContainer,
   ReadBtn,
-  SecondImg,
   Span,
   SubTitle,
   Title,
@@ -33,17 +32,17 @@ const Project = () => {
         <ReadBtn>Read More</ReadBtn>
       </ContentContainer>
       <ImgContainer>
+        <div>
+          <Img src={Interior} />
+        </div>
         <InnerContainer>
-          <FirstImg src={Interior} />
+          <Img src={Interior2} />
         </InnerContainer>
+        <div>
+          <Img src={Interior1} />
+        </div>
         <InnerContainer>
-          <SecondImg src={Interior1} />
-        </InnerContainer>
-        <InnerContainer>
-          <SecondImg src={Interior2} />
-        </InnerContainer>
-        <InnerContainer>
-          <SecondImg src={Interior3} />
+          <Img src={Interior3} />
         </InnerContainer>
       </ImgContainer>
     </Container>

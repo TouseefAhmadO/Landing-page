@@ -1,4 +1,15 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(30px); /* Optional for subtle motion */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
 
 export const Container = styled.div`
   background: #3d5b5c;
@@ -6,6 +17,7 @@ export const Container = styled.div`
   padding: 0px 10%;
   display: flex;
   justify-content: space-between;
+  animation: ${fadeIn} 1.2s ease-in-out;
   @media (max-width: 1642px) {
     margin-top: 15%;
     padding: 0px 5%;

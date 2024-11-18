@@ -38,9 +38,7 @@ const Service = () => {
         <Items>
           <IconStyle className="bi bi-patch-check-fill"></IconStyle>
           <ItemTitle>Warranty</ItemTitle>
-          <ItemDesc>
-            We provide 1 month warranty after processing
-          </ItemDesc>
+          <ItemDesc>We provide 1 month warranty after processing</ItemDesc>
         </Items>
       </InnerContainer>
     </Container>

@@ -18,15 +18,15 @@ const Discount = () => {
   return (
     <Container>
       <ImgContainer>
-        <DiscountImg src={Image} />
+        <DiscountImg src={Image} alt="discount" />
       </ImgContainer>
       <ContentContainer className="py-4">
         <Title>Get voucher</Title>
         <Title>discount up to 50%</Title>
         <Desc>Put your email address and get started</Desc>
         <InnerContainer>
-          <AppleStoreStyle src={AppleStore} />
-          <PlayStoreStyle src={PlayStore} />
+          <AppleStoreStyle src={AppleStore} alt="apple store" />
+          <PlayStoreStyle src={PlayStore} alt="play store" />
         </InnerContainer>
       </ContentContainer>
     </Container>

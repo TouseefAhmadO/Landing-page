@@ -18,7 +18,7 @@ const Footer = () => {
       <ContentContainer>
         <LogoContainer>
           <Title>
-            <img src={logo} height={50} width={50} />
+            <img src={logo} height={50} width={50} alt="logo" />
             AGERIOR AGENCY
           </Title>
           <Desc>

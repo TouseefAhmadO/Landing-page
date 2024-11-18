@@ -1,9 +1,21 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(30px); /* Optional for subtle motion */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
 
 export const Container = styled.div`
   background: #3d5b5c;
   margin-bottom: 50px;
-  padding: 50px 10%;
+  padding: 80px 10%;
+  animation: ${fadeIn} 1.2s ease-in-out;
 `;
 export const InnerContainer = styled.div`
   display: flex;
