@@ -19,7 +19,7 @@ const Agency = () => {
       </ImgContainer>
       <ContentContainer>
         <InnerContainer>
-          <Title>AGERIOR AGENCY</Title>
+          <Title>AESTHETICA AGENCY</Title>
           <Desc>
             We are an agent engaged in interior design that provides interior
             design and renovation services for home or office.

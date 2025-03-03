@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+import { BUTTON_BG, SECONDARY_TEXT, SECONDARY_TITLE, TITLE } from "../../utils/colors";
 
 const fadeIn = keyframes`
   from {
@@ -42,7 +43,7 @@ export const ContentContainer = styled.div`
 
 export const Title = styled.h1`
   font-size: 50px;
-  color: #414141;
+  color: ${TITLE};
   font-family: sans-serif;
   text-transform: uppercase;
   @media (max-width: 1100px) {
@@ -58,7 +59,7 @@ export const Title = styled.h1`
 
 export const SubTitle = styled.h1`
   font-size: 26px;
-  color: #414141;
+  color: ${TITLE};
   font-weight: 300;
   text-transform: uppercase;
   padding-bottom: 30px;
@@ -78,7 +79,7 @@ export const SubTitle = styled.h1`
 export const Span = styled.span`
   flex: 1;
   height: 1px;
-  background-color: #000;
+  background-color: ${BUTTON_BG};
   margin-left: 10px;
   @media (max-width: 980px) {
     font-size: 40px;
@@ -90,7 +91,7 @@ export const Span = styled.span`
 
 export const Desc = styled.h1`
   font-size: 25px;
-  color: #b8b8b8;
+  color: ${SECONDARY_TITLE};
   width: 80%;
   font-weight: 300;
   margin-bottom: 20px;
@@ -107,9 +108,9 @@ export const Desc = styled.h1`
 `;
 
 export const ReadBtn = styled.button`
-  background: black;
+  background: ${BUTTON_BG};
   border: none;
-  color: white;
+  color: ${SECONDARY_TEXT};
   padding: 10px 30px;
   margin-top: 20px;
   font-weight: 600;

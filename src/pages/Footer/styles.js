@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+import { FOOTER_BG, PRIMARY_TEXT, SECONDARY_TEXT } from "../../utils/colors";
 
 const fadeIn = keyframes`
   from {
@@ -13,7 +14,7 @@ const fadeIn = keyframes`
 
 export const Container = styled.div`
   padding: 50px 10% 50px 10%;
-  background: #1b1b1b;
+  background: ${FOOTER_BG};
   animation: ${fadeIn} 1.2s ease-in-out;
 `;
 export const ContentContainer = styled.div`
@@ -46,7 +47,7 @@ export const TitleContainer = styled.div`
 
 export const Title = styled.h1`
   font-size: 30px;
-  color: white;
+  color: ${SECONDARY_TEXT};
   display: flex;
   align-items: center;
   gap: 15px;
@@ -57,7 +58,7 @@ export const Title = styled.h1`
 `;
 export const Desc = styled.h1`
   font-size: 20px;
-  color: #7f7f7f;
+  color: ${PRIMARY_TEXT};
   margin-top: 20px;
   width: 80%;
   @media (max-width: 1316px) {
@@ -68,7 +69,7 @@ export const Desc = styled.h1`
 
 export const CopyRight = styled.h1`
   text-align: center;
-  color: #7f7f7f;
+  color: ${PRIMARY_TEXT};
   font-size: 17px;
 `;
 

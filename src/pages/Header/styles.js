@@ -1,5 +1,6 @@
 import { Nav, Navbar } from "react-bootstrap";
 import styled, { keyframes } from "styled-components";
+import { BACKGROUND, BUTTON_BG, GLOBAL_BACKGROUND, PRIMARY_TEXT, SECONDARY_TEXT, TEXT } from "../../utils/colors";
 
 const fadeIn = keyframes`
   from {
@@ -15,7 +16,8 @@ const fadeIn = keyframes`
 export const Title = styled.h1`
   font-size: 30px;
   font-weight: 600;
-  color: #303030;
+  padding-left: 8px;
+  color: ${TEXT};
   margin-bottom: 0;
 `;
 export const Item = styled(Nav.Link)`
@@ -23,9 +25,9 @@ export const Item = styled(Nav.Link)`
   font-weight: 500;
   padding-left: 15px !important;
   padding-right: 15px !important;
-  color: #767878;
+  color: ${PRIMARY_TEXT};
   &:active {
-    color: #1d1e1e;
+    color: ${TEXT};
   }
 `;
 
@@ -37,7 +39,7 @@ export const NavBarBrand = styled(Navbar.Brand)`
 export const NavBarCollapse = styled(Navbar.Collapse)`
   background: transparent;
   @media (max-width: 991px) {
-    background: #ecefef;
+    background: ${BACKGROUND};
   }
 `;
 
@@ -83,7 +85,7 @@ export const LeftSide = styled.div`
 `;
 export const RightSide = styled.div`
   width: 60%;
-  background-color: #ecefef;
+  background-color: ${BACKGROUND};
   padding-top: 150px;
   padding-bottom: 100px;
   @media (max-width: 1000px) {
@@ -95,8 +97,8 @@ export const LeftTitle = styled.h1`
   padding-right: 20px;
   font-size: 80px;
   position: relative;
-  color: #303030;
-  background-color: white;
+  color: ${TEXT};
+  background-color: ${GLOBAL_BACKGROUND};
   z-index: 1;
   width: max-content;
   font-family: sans-serif;
@@ -129,7 +131,7 @@ export const LftTitle = styled(LeftTitle)`
 export const LeftDesc = styled.h1`
   padding-right: 134px;
   font-size: 25px;
-  color: #767878;
+  color: ${PRIMARY_TEXT};
   font-weight: 400;
   margin-top: 25px;
   @media (max-width: 1440px) {
@@ -159,9 +161,9 @@ export const LftDesc = styled(LeftDesc)`
 `;
 
 export const AboutBtn = styled.button`
-  background: black;
+  background: ${BUTTON_BG};
   border: none;
-  color: white;
+  color: ${SECONDARY_TEXT};
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 10px;
@@ -239,7 +241,7 @@ export const IconContainer = styled.div`
 `;
 export const IconStyle = styled.i`
   color: #3c5a5a;
-  background: #ecefef;
+  background: ${BACKGROUND};
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 5px;

@@ -1,0 +1,11 @@
+export const GLOBAL_BACKGROUND = "#ffffff";
+export const BACKGROUND = "#EDF4F2";
+export const TEXT = "#303030";
+export const SECONDARY_TEXT = "#ffffff";
+export const PRIMARY_TEXT = "#767878";
+export const TITLE = "#414141";
+export const SECONDARY_TITLE = "#b8b8b8";
+export const BUTTON_BG = "#31473A";
+export const SERVICE_BG = "#31473A";
+export const SERVICE_TEXT = "#879999";
+export const FOOTER_BG = "#1b1b1b";

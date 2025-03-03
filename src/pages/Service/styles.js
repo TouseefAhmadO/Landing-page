@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+import { SECONDARY_TEXT, SERVICE_BG, SERVICE_TEXT } from "../../utils/colors";
 
 const fadeIn = keyframes`
   from {
@@ -12,7 +13,7 @@ const fadeIn = keyframes`
 `;
 
 export const Container = styled.div`
-  background: #3d5b5c;
+  background: ${SERVICE_BG};
   margin-bottom: 50px;
   padding: 80px 10%;
   animation: ${fadeIn} 1.2s ease-in-out;
@@ -25,7 +26,7 @@ export const InnerContainer = styled.div`
 `;
 export const Title = styled.h1`
   font-size: 50px;
-  color: #ffff;
+  color: ${SECONDARY_TEXT};
   font-family: sans-serif;
   text-align: center;
   text-transform: uppercase;
@@ -45,12 +46,12 @@ export const Items = styled.div`
 `;
 
 export const IconStyle = styled.i`
-  color: white;
+  color: ${SECONDARY_TEXT};
   font-size: 50px;
 `;
 export const ItemTitle = styled.h1`
   font-size: 30px;
-  color: white;
+  color: ${SECONDARY_TEXT};
   text-transform: uppercase;
   font-weight: 300;
   margin-top: 12px;
@@ -59,7 +60,7 @@ export const ItemTitle = styled.h1`
 
 export const ItemDesc = styled.h1`
   font-size: 20px;
-  color: #879999;
+  color: ${SERVICE_TEXT};
   font-weight: 300;
   margin-top: 12px;
   padding: 0px 50px;

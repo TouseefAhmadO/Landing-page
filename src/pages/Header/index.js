@@ -1,7 +1,7 @@
 import React from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import logo from "../../assets/react.svg";
+import logo from "../../assets/logo.png";
 import home from "../../assets/image.jpg";
 import homeOne from "../../assets/imge1.jpg";
 import {
@@ -32,7 +32,7 @@ const Header = () => {
         <Navbar expand="lg">
           <NavBarBrand href="#home">
             <img src={logo} height={50} width={50} alt="logo" />
-            <Title>AGERIOR</Title>
+            <Title>AESTHETICA</Title>
           </NavBarBrand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <NavBarCollapse id="basic-navbar-nav">

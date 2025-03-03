@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+import { SECONDARY_TEXT, SERVICE_BG } from "../../utils/colors";
 
 const fadeIn = keyframes`
   from {
@@ -12,7 +13,7 @@ const fadeIn = keyframes`
 `;
 
 export const Container = styled.div`
-  background: #3d5b5c;
+  background: ${SERVICE_BG};
   margin: 11% 10% 100px 10%;
   padding: 0px 10%;
   display: flex;
@@ -61,7 +62,7 @@ export const DiscountImg = styled.img`
 
 export const Title = styled.h1`
   font-size: 50px;
-  color: white;
+  color: ${SECONDARY_TEXT};
   font-weight: 400;
   @media (max-width: 988px) {
     font-size: 40px;

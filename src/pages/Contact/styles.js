@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+import { SERVICE_BG, TITLE } from "../../utils/colors";
 
 const fadeIn = keyframes`
   from {
@@ -49,7 +50,7 @@ export const ContentContainer = styled.div`
 `;
 export const Title = styled.h1`
   font-size: 50px;
-  color: #414141;
+  color: ${TITLE};
   font-family: sans-serif;
   text-transform: uppercase;
   @media (max-width: 980px) {
@@ -86,7 +87,7 @@ export const InputStyle = styled.input`
 `;
 
 export const SendBtn = styled.button`
-  background: #3d5b5c;
+  background: ${SERVICE_BG};
   border: none;
   color: white;
   padding: 20px 40px;

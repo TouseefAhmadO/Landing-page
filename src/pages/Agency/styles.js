@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+import { BACKGROUND, BUTTON_BG, PRIMARY_TEXT, SECONDARY_TEXT, TEXT } from "../../utils/colors";
 
 const fadeIn = keyframes`
   from {
@@ -56,7 +57,7 @@ export const ContentContainer = styled.div`
 `;
 
 export const InnerContainer = styled.div`
-  background: #ecefef;
+  background: ${BACKGROUND};
   padding: 70px 100px;
   width: 100%;
   margin-left: -190px;
@@ -77,7 +78,7 @@ export const InnerContainer = styled.div`
 
 export const Title = styled.h1`
   font-size: 50px;
-  color: #303030;
+  color: ${TEXT};
   font-family: sans-serif;
   @media (max-width: 1345px) {
     font-size: 40px;
@@ -92,7 +93,7 @@ export const Title = styled.h1`
 
 export const Desc = styled.h1`
   font-size: 25px;
-  color: #767878;
+  color: ${PRIMARY_TEXT};
   font-weight: 400;
   @media (max-width: 1345px) {
     font-size: 20px;
@@ -106,9 +107,9 @@ export const Desc = styled.h1`
 `;
 
 export const ReadBtn = styled.button`
-  background: black;
+  background: ${BUTTON_BG};
   border: none;
-  color: white;
+  color: ${SECONDARY_TEXT};
   padding: 10px 30px;
   margin-top: 20px;
   font-weight: 600;

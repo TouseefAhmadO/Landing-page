@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/react.svg";
+import logo from "../../assets/logo.png";
 import {
   Container,
   ContentContainer,
@@ -19,7 +19,7 @@ const Footer = () => {
         <LogoContainer>
           <Title>
             <img src={logo} height={50} width={50} alt="logo" />
-            AGERIOR AGENCY
+            AESTHETICA AGENCY
           </Title>
           <Desc>
             Our agency is ready to serve interior design for your home or office
